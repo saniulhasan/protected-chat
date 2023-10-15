@@ -1,0 +1,136 @@
+.App {
+  width: 100vh;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  margin: 0 auto;
+}
+
+.join-room-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+}
+
+.join-room-container h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.join-room-container input {
+  width:350px;
+  height: 40px;
+  margin: 7px;
+  border: 2px solid #0a0a0a;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+}
+
+.join-room-container button {
+  width: 360px;
+  height: 50px;
+  margin: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 16px;
+  background: #080808;
+  color: #fff;
+  cursor: pointer;
+}
+ .chat-section{
+  width: 350px;
+  height: 500px;
+ }
+
+.join-room-container button:hover {
+  background: #383e38;
+}
+ 
+
+.chat-header p {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  border: 1px solid black;
+  padding: 10px;
+  background: lightgray;
+}
+.chat-body{
+  height:350px;
+  border: 1px solid black;
+  /* overflow-y: scroll; */
+}
+.chat-footer {
+  border-top: none;
+  border: 1px solid black;
+  height: 50px;
+  display: flex;
+}
+.chat-footer input{
+  height: 100%;
+  flex: 85%;
+  border: 0;
+  padding: 0 0.5em;
+  font-size: 1em;
+  border-right: 1px dotted #607d8b;
+  outline: none;
+}
+.chat-footer  button{
+  background-color: transparent;
+  color: blue;
+  cursor: pointer;
+  border: 0;
+  padding:0 15px;
+  font-size: 18px;
+  
+}
+.chat-footer  button:hover{
+  background-color: rgb(19, 18, 18);
+  color: #f5f7f5;
+  cursor: pointer;
+  border: 0;
+}
+
+.message {
+  height: auto;
+  padding: 10px;
+  display: flex;
+}
+#mySelf{
+  justify-content: flex-end;
+}
+
+#another{
+  justify-content: flex-start;
+}
+
+.message-meta{
+  display: flex;
+}
+.message-meta p{
+  margin-top: 0;
+  padding-top:0;
+}
+#mySelf .message-content p{
+  background-color: aqua;
+  padding: 5px 10px;
+  margin-bottom: 0px;
+  border-radius: 5px;
+}
+#another .message-content p{
+  background-color: rgb(58, 98, 240);
+  padding: 5px 10px;
+  margin-bottom: 0px;
+  color: white;
+  border-radius: 5px;
+}
+.author{
+  margin-left: 10px;
+  font-weight: 700;
+}
+.scroll-bar{
+  width: 100%;
+  height: 100%;
+}
